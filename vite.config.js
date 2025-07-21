@@ -8,5 +8,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
-  base: '/upyou/',
+  base: '/UpYou/',
 })
