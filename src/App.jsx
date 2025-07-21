@@ -2,12 +2,42 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Navigation from './Components/Main/Navigation'
+import Support from './Components/Main/Support'
+import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import Breathing from './Components/Main/Breathing/Breathing'
+import Habits from './Components/Main/Habits/Habits'
+import Stories from './Components/Main/Stories/Stories'
+import Friends from './Components/Main/Friends/Friends'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Support />,
+    children: [
+      {
+        path: "/Habits",
+        element: <Habits />,
+      },
+      {
+        path: "/Stories",
+        element: <Stories/>,
+      },
+      {
+        path: "/Breathing",
+        element: <Breathing />,
+      },
+      {
+        path: "/Friends",
+        element: <Friends />,
+      }
+    ]
+  },
+]);
 
 function App() {
 
   return (
-   <Navigation />
+   <RouterProvider router={router} />
   )
 }
 
