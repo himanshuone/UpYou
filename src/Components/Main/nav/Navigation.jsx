@@ -11,6 +11,7 @@ function Navigation() {
           <span className="mr-10">
             <NavLink to="/Habits" className={({ isActive }) => ` ${isActive ? "text-orange-700 " : "text-black-700"} font-stretch-110%`}>Habits</NavLink> </span>
           <span className="mr-10 "><NavLink to="/Breathing" className={({ isActive }) => ` ${isActive ? "text-orange-700 " : "text-black-700"} font-stretch-110%`}>Breathing</NavLink></span>
+          <span className="mr-10"><NavLink to="/Pomodoro" className={({ isActive }) => ` ${isActive ? "text-orange-700 " : "text-black-700"} font-stretch-110%`}>Pomodoro</NavLink></span>
           <span className="mr-10"><NavLink to="/Stories" className={({ isActive }) => ` ${isActive ? "text-orange-700 " : "text-black-700"} font-stretch-110%`}>Stories</NavLink></span>
           <span ><NavLink to="/Friends" className={({ isActive }) => ` ${isActive ? "text-orange-700 " : "text-black-700"} font-stretch-110%`}>Friends</NavLink></span>
         </div>

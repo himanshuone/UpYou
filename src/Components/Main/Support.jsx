@@ -1,6 +1,6 @@
 import React from 'react'
 import Navigation from './nav/Navigation'
-import Habits from './Habits/Habits'
+
 import { Outlet } from 'react-router-dom'
 
 
