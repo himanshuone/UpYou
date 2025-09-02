@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 function Pomodoro() {
-    const [timeLeft, setTimeLeft] = useState(25 * 60);
-    const [isRunning, setIsRunning] = useState(false);
-    const [status, setStatus] = useState('Ready to focus.');
+    // const [timeLeft, setTimeLeft] = useState(25 * 60);
+    // const [isRunning, setIsRunning] = useState(false);
+    // const [status, setStatus] = useState('Ready to focus.');
     const [totalTimeToday, setTotalTimeToday] = useState(0);
     const [tasks, setTasks] = useState([]);
     const [achievedTasks, setAchievedTasks] = useState([]);
@@ -88,6 +88,8 @@ function Pomodoro() {
             <div className='flex h-screen'>
                 <main className="w-full flex flex-col md:flex-row gap-8">
                     <div className="flex-1 flex flex-col items-center">
+
+                        ...............................
                         <div className="text-6xl font-bold text-gray-800 my-8">
                             {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
                         </div>
@@ -107,7 +109,7 @@ function Pomodoro() {
                                 Reset
                             </button>
                         </div>
-
+...............................
                         <p className="text-gray-500 text-sm italic mb-8">{status}</p>
 
                         <div className="w-full">
@@ -126,13 +128,14 @@ function Pomodoro() {
                             )}
                         </div>
                     </div>
-
+                        ...............................
                     <div className="flex-1 flex flex-col">
                         <div className="flex-1 mb-8 p-6 rounded-2xl bg-white shadow-sm border border-gray-200">
                             <div className="flex justify-between items-center mb-4">
                                 <h3 className="text-lg font-semibold text-gray-700">Tasks</h3>
                                 <button className="text-white bg-[#3b5a51] p-2 rounded-full shadow-md hover:bg-[#2c453e] transition-colors" onClick={handleAddTask}>+</button>
                             </div>
+                                                    ...............................
                             {showTaskInput && (
                                 <input
                                     type="text"
